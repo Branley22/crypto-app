@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import { UserAuth } from '../context/AuthContext'
+
 
 const SignUp = () => {
+  const [] = useState('')
+  const { SignUp } = UserAuth()
+
+
   return (
     <div>
       <div className='max-w-[400px] mx-auto min-h-[600px] px-4 py-20'>
